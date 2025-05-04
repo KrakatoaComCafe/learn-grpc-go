@@ -4,6 +4,7 @@ option go_package = "common/orders";
 
 service OrderService {
     rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse) {}
+    rpc GetOrders(GetOrdersRequest) returns (GetOrdersResponse) {}
 }
 
 message Order {

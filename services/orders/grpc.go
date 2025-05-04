@@ -26,7 +26,7 @@ func (s *gRPCServer) Run() error {
 	orderService := service.NewOrderService()
 	handler.NewGrpcOrderService(grpcServer, orderService)
 
-	log.Print("Starting gRPC server on", s.addr)
+	log.Println("Starting gRPC server on", s.addr)
 
 	return grpcServer.Serve(lis)
 }
